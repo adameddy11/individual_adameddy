@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+  
+body { background-image: url("images/solid.jpg");
+ 		background-size: cover;
+ 		background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: monospace;
+	text-align: center;
+	color: black;
+}
+
+p {
+	font-family: monospace;
+	text-align: center;
+	color: black;
+}
+
+.gallery {
+	margin: 10px 50px;
+}
+
+.gallery img {
+	width: 205px;
+	padding: 5px;
+}
+
+.back {
+	position: absolute;
+	top: 10%;
+	transform: translateY(-50%);
+	width: 15%;
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background:white;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px white;
+	color: black;
+	overflow: hidden;
+	position: relative;
+}
+
+.btn i {
+	line-height: 90px;
+	font-size: 26px;
+	transition: 0.2 linear;
+}
+
+.btn: hover i {
+	transform: scale(1.3);
+	color: black;
+}
+
+.btn::before {
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background:black;
+	transform: rotate(45deg);
+	left: 110%;
+	top: 90%;
+}
+
+.btn:hover::before {
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+
+@keyframes aaa {
+	  0%{
+	  	left: -110%;
+	  	top: 90%;
+	  }50%;{
+	  left: -10%;
+	  top: 30%;
+      }100%;{
+      	top: -10%;
+      	left: -10%;
+      }
+
+	</style>
+	<title>Gallery</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+
+			<br><br><br>
+			<h1>Adam Eddy's Gallery</h1>
+			<br>
+			<center><p>Bunch of pictures of me with my friends and my cat</p></center>
+			<br>
+			<hr>
+			<br><br>
+					<div class="gallery">
+						<center>
+						<a href="images/gallery1.jpg">
+						<img src="images/gallery1.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery2.jpg">
+						<img src="images/gallery2.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery3.jpg">
+						<img src="images/gallery3.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery4.jpg">
+						<img src="images/gallery4.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery5.jpg">
+						<img src="images/gallery5.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery6.jpg">
+						<img src="images/gallery6.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery7.jpg">
+						<img src="images/gallery7.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery8.jpg">
+						<img src="images/gallery8.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery9.jpg">
+						<img src="images/gallery9.jpg" width="180" height="180" border="2">
+						</a>
+
+						<a href="images/gallery10.jpg">
+						<img src="images/gallery10.jpg" width="180" height="180" border="2">
+						</a>
+						</center>
+
+					</div>
+				</div>
+			</div>
+		
+		<br>
+	<div class="back">
+		<a class="btn" href="index.html">
+		<i class="fas fa-home"></i>
+	</a>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+  
+body { background-image: url("images/silver.jfif");
+ 		background-size: cover;
+ 		background-repeat: no-repeat;
+}
+
+.sidebar {
+	position: fixed;
+	left: 0px ;
+	width: 250px;
+	height: 100%;
+	background: lightgrey;
+}
+
+.sidebar header{
+	font-size: 22px;
+	color: black;
+	text-align: : center;
+	line-height: 70px;
+	background: grey;
+	user-select:none;
+	transition: all .5s ease;
+}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	font-family: monospace;
+	color: black;
+	padding-left: 40px;
+	box-sizing: border-box;\
+	border-top: 1px solid rgba(255,255,255,1);
+	border-bottom: 1px solid white;
+	transition: .4s;
+}
+
+ul li: hover a {
+	padding-left: 50px;
+}
+
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+picture {
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	background-image: url("images/profile.jpg");
+	background-size: cover;
+}
+
+.container {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	font-family: monospace;
+	text-align: center;
+	color: black;
+}
+
+h4 {
+	font-family: monospace;
+	text-align: center;
+	color: black;
+}
+
+p {
+	font-family: monospace;
+	text-align: center;
+	color: black;
+}
+
+.rounded {
+	border-radius: 50%;
+	padding: 1px;
+	border-radius: 8px solid transparent;
+	background: linear gradient(90deg, black);
+}
+	</style>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	
+</head>
+<body>
+
+	<div class="sidebar">
+		<header><h4>Menu</h4></header>
+		<ul>
+			<a href="index.html"><i class="fas fa-home"></i>Home</a>
+			<a href="aboutme.html"><i class="fas fa-portrait"></i>About Me</a>
+			<a href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+			<a href="playlist.html"><i class="fas fa-music"></i>Playlist</a>
+			<a href="contact.html"><i class="fab fa-empire"></i>Contact</a>
+		</ul>
+		<br><br><br><br><br><br><br>
+			<hr>
+			<br>
+			<h4>Muhammad Adam Bin M. Eddy Nizar</h4>
+			<br>
+			<h4>Faculty of Information Management</h4>
+			<br>
+			<h4>Universiti Teknologi Mara</h4>
+	</div>
+	
+	<center>
+			<div class="container">
+				<img src="images/profile.jpg" class="rounded" width="300" height="300">
+				<h1>Adam Eddy</h1>
+				<br>
+				<p>Universiti Teknologi Mara</p>
+				<br>
+				<p>Faculty of Information Management (N5IM1105A)</p>
+				<br>
+				<span class="location"><i class="fas fa-map-marker-alt">&nbsp;Malaysia</i></span>
+				<br><br>
+				<p>&copy2020</p>
+
+			</div>
+	</center>
+
+</body>
+</html>
